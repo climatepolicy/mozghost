@@ -1,0 +1,102 @@
+
+.chart {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+text {
+  font-size: 11px;
+}
+
+rect {
+  fill: none;
+}
+
+/*MAIN*/
+body {
+  background: #929292;
+  font-family: 'CronosProLight';
+  /*font-family: 'CronosProLight';*/
+  margin: auto;
+  width: 1280px;
+}
+
+a {
+  color: #6baed6;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+.stack {
+  background: #fff;
+  color: #666;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  display: none;
+  font-size: 48px;
+  height: 800px;
+  padding: 80px 80px;
+  width: 1280px;
+  -webkit-transform: translate3d(0,0,0);
+  background-image: url("CPI_logo.svg");
+  background-repeat:no-repeat;
+  background-position: 80px bottom;
+  background-size:280px 260px;  
+}
+
+@font-face {
+    font-family: 'ChaparralProRegular';
+    src: url('font-face/chaparralpro-regular-webfont.eot?#iefix');
+    src:local('ChaparralProRegular'),
+		url('font-face/chaparralpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font-face/chaparralpro-regular-webfont.woff') format('woff'),
+         url('font-face/chaparralpro-regular-webfont.ttf') format('truetype'),
+         url('font-face/chaparralpro-regular-webfont.svg#ChaparralProRegular') format('svg');
+	font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CronosProLight';
+    src: url('font-face/cronospro-lt-webfont.eot?#iefix');
+    src: local('CronosProLight'),
+		url('font-face/cronospro-lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font-face/cronospro-lt-webfont.woff') format('woff'),
+         url('font-face/cronospro-lt-webfont.ttf') format('truetype'),
+         url('font-face/cronospro-lt-webfont.svg#CronosProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.active {
+  box-shadow: 0px 4px 8px rgba(0,0,0,.5);
+  display: block;
+  position: fixed;
+}
+
+.grey {
+  color: #969696;
+}
+
+@media
+screen and (max-device-width: 1024px) {
+  body {
+    width: 1200px;
+  }
+
+  .stack {
+    margin: 40px 0;
+  }
+
+  .stack {
+    display: block;
+  }
+}

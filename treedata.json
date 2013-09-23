@@ -1,0 +1,29 @@
+{
+ "name": "flare",
+   "children": [
+    {
+     "name": "forests",
+     "children": [
+      {"name": "Dense Forest", "size": 27},
+      {"name": "Open Forest", "size": 16},
+      {"name": "Plantation Forest", "size": 1}
+     ]
+    },
+    {
+     "name": "Bush, Savanna, Pasture", 
+	"children": [{"name": "Bush, Savanna, Pasture", "size": 14}]
+    },
+    {
+     "name": "Cultivation", 
+     "children": [{"name": "Cultivation", "size": 6}]
+    },
+    {
+     "name": "Mixed Forests and Cultivation", 
+     "children": [{"name": "Mixed Forests and Cultivation", "size": 10}]
+    },
+    {
+     "name": "Urban and peri-urban",
+     "children": [{"name": "Urban and peri-urban", "size": 6}]
+    }
+ ]
+}
