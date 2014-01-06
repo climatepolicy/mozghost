@@ -2,7 +2,6 @@
 .chart {
   display: block;
   margin: auto;
-  margin-top: 40px;
 }
 
 text {
@@ -41,13 +40,13 @@ a:not(:hover) {
   display: none;
   font-size: 48px;
   height: 800px;
-  padding: 80px 80px;
+  padding: 40px 40px;
   width: 1280px;
   -webkit-transform: translate3d(0,0,0);
   background-image: url("CPI_logo.svg");
   background-repeat:no-repeat;
-  background-position: 80px bottom;
-  background-size:280px 260px;  
+  background-position: 40px bottom;
+  background-size:280px 50px;  
 }
 
 @font-face {

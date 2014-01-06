@@ -18,53 +18,121 @@ h1 {
 	color: #F96302;
 }
 
+#titlepage {
+	margin:0px;
+	padding-top: 15%;
+	text-align: center;
+}
+
+strong{
+	font-size: 2em;
+}
 </style>
 <body class="overview">
 
-<section>
-	<h1>Mozambique uses land</h1>
- 	<div id = "treediv"></div>
+<section id = "titlepage">
+<h1> Mozambique Scoping Update </h1>
+Andrew Hobbs
+<br>
+<br>
+January 2014
 </section>
 
 <section>
-	<h1>Productivity is low</h1>
-	<p>Graphic comparing productivity with Brazil.</p>
+	<h1>What are we doing in Mozambique?</h1>
+	<p>Part of CPI's Production-Protection portfolio (with Brazil and Indonesia).</p>
+ 	<p>Supported by Barclays Africa in partnership with Technoserve.</p>
+	<p>So far, we've focused on data-gathering.</p>
 </section>
 
 <section>
-	<h1>Some crops are best sold locally</h1>
-	<p>Graphics showing prices where domestic prices > world prices.</p>
+	<h1>This presentation will tell it to you:</h1>
+	<ul>
+		<li> Land use drives Mozambique's carbon emissions, climate risk, and low income.</li>
+		<li> Most land is not cultivated. </li>
+		<li> Cultivated land is not productive. </li>
+		<li> Uncultivated land is deforested for household fuel, especially near cities. </li>
+		<li> The PP Framework will help us understand why. </li>
+	</ul>
+	<span style = "text-align:center">You can go to sleep now.</span>
 </section>
 
 <section>
-	<h1>Others are best exported</h1>
-	<p>Graphics showing prices where world prices > domestic prices.</p>
+<h1>Land use drives Mozambique's emissions.</h1>
 </section>
 
 <section>
-	<h1>Local jurisdictions vary in quality</h1>
-	<p>HDI by province</p>
+<h1>Mozambican incomes are land-use driven.</h1>
+Agriculture employs <strong>90%</strong> of women and 
+<br> &nbsp; &nbsp; &nbsp; &nbsp;
+<strong>70%</strong> of men in Mozambique.
+<br>
+It represents <strong>24%</strong> of the country's GDP.
 </section>
 
 <section>
-	<h1>Land also varies in quality</h1>
-	<p>Map showing potential agricultural value or something similar.</p>
+<h1>Climate risk is serious in Mozambique.</h1>
+Mozambique is among the world's most at risk countries for droughts and flooding from climate change.
+
+Subsistence agriculture dependence means droughts will lead to starvation as well as poverty.
 </section>
 
 <section>
-	<h1>Infrastructure is an important constraint</h1>
-	<p>Infrastructure map.</p>
+	<h1>How Mozambique uses land:</h1>
+ 	<div style = "height:600px">
+  	<div id="treediv" style = "float:left">
+    </div>
+    <div id="infodiv" style = "float:left">
+    </div>
+	</div>
 </section>
 
 <section>
-	<h1>Agricultural corridors have been developed for this reason</h1>
-	<p>Map with the five corridors.</p>
+	<h1>Even on cultivated land, productivity is low.</h1>
+	<img src="productivity.png" alt="Mozambique's agriculture productivity compared to Brazil and South Africa." />
 </section>
+
+<section>
+	<h1>Uncultivated land is deforested for fuel.</h1>
+	Each year, <strong>529 square miles</strong> of land are deforested for fuel.
+	<br>
+	<strong>50%</strong> of the country remains forested
+	<br>
+	The forest is shrinking <strong>0.5-1.5%</strong> each year
+</section>
+
+<section>
+<h1>Production-Protection</h1>
+		<img src="ppmatrix.png" width="40%"alt="The Production-Protection Matrix" />
+
+</section>
+
+<section>
+	<h1>Barriers: Technology & Institutions</h1>
+</section>
+
+<section>
+	<h1>Barriers: Finance</h1>
+</section>
+
+<section>
+	<h1>Barriers: Risk Management</h1>
+</section>
+
+<section>
+	<h1>Barriers: Markets & Infrastructure</h1>
+</section>
+
+<section>
+	<div id = "mozmap"></div>
+</section>
+
 
 <link rel="shortcut icon" href="http://climatepolicyinitiative.org/wp-content/themes/cpi/images/favicon.ico?cb=1" />
 
-<script src="d3.v3.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="stack.v0.min.js"></script>
 <script type="text/javascript" src="http://d3js.org/d3.layout.js"></script>
-<script type="text/javascript" src ="moztree.js"></script>
+<script type="text/javascript" src ="landcover.js"></script>
 
+<script type="text/javascript" src ="mozmap.js"></script>
