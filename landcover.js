@@ -52,8 +52,8 @@ d3.json("flare.json", function(data) {
       .attr("dy", ".35em")
       .attr("text-anchor", "middle")
       .text(function(d) { return d.name; })
-	  .style("pointer-events","none")
-      .style("opacity", function(d) { d.w = this.getComputedTextLength(); return d.dx > d.w ? 1 : 0; });
+	  .style("opacity", function(d) { d.w = this.getComputedTextLength(); return d.dx > d.w ? 1 : 0; })
+	  .style("pointer-events","none");
 
   d3.select(window).on("click", function() { zoom(root); });
 });

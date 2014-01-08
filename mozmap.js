@@ -1,12 +1,15 @@
-(function(){
+(function (){
     var width = 375,
-    height = 350,
-    z = d3.scale.category10(),
+    height = 650,
+    north = "blue",
+    center = "red",
+    south = "green",
+    z = d3.scale.ordinal().range([north, south, south, center, south, north, north, center, center, north]),
     centered;
     
 var projection = d3.geo.mercator()
-    .scale(2000)
-    .translate([-1055, -365]);
+    .scale(1700)
+    .translate([-855, -315]);
 
 var path = d3.geo.path()
     .projection(projection);
@@ -16,27 +19,27 @@ var svg = d3.select("#mozmap").append("svg")
     .attr("height", height)
     .attr("border-style","solid");
     
-
 d3.json("moz.json", function(error, moz) {
-    
-    
     
  //draw provinces          
   var provinces = svg.selectAll("path")
     .data(topojson.feature(moz, moz.objects.provinces).features);
     
+  /*
      //add district boundaries 
   svg.selectAll("path")
     .data(topojson.feature(moz, moz.objects.districts).features)
   .enter().append("path")
     .attr("d", path)
-    .attr("class", "district");
-    
+    .attr("class", "district")
+    .attr("pointer-events", "none");
+  */  
     
   provinces.enter().append("path")
     .attr("d", path)
     .attr("class", "province")
     .style("fill", function(d){return z(d.properties.pid);})
+    .style("opacity","0.5")
     .on("click", clicked)
     .on("mouseover", mouseOver)
     .on("mouseout", mouseOut);
@@ -55,6 +58,8 @@ d3.json("moz.json", function(error, moz) {
     .attr("class", "province-label")
     .attr("transform", function(d) { return "translate(" + path.centroid(d) + ") rotate(330)"; })
     .attr("dy", ".35em")
+    .attr("pointer-events", "none")
+    .style("text-anchor", "middle")
     .text(function(d) { return d.properties.pname; });
   
 
