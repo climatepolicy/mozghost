@@ -1,3 +1,4 @@
+
 landcover();
 function landcover(){
 var w = 600,
@@ -46,7 +47,7 @@ d3.json("flare.json", function(data) {
 	  .on("mouseover", mouseOver)
 	  .on("mouseout", mouseOut);
 
-  cell.append("svg:text")
+  cell.append("text")
       .attr("x", function(d) { return d.dx / 2; })
       .attr("y", function(d) { return d.dy / 2; })
       .attr("dy", ".35em")
